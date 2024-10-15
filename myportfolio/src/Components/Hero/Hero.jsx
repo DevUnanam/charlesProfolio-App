@@ -40,7 +40,7 @@ function Hero() {
                 </h1>
                 <h2>Frontend Developer</h2>
                 <span>
-                    <a href="https://twitter.com" target='_blank' rel='noreferrer'>
+                    <a href="https://x.com/unanam_jsx" target='_blank' rel='noreferrer'>
                         <img src={twitterIcon} alt="Twitter icon" />
                     </a>
                     <a href="https://github.com/UnanamCharles" target='_blank' rel='noreferrer'>
