@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form in the container */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* Center form elements horizontally */
+}
+
+textarea, input[type='text'], input[type='email'], input[type='password'] {
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+    border-radius: 30px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--form-text-color); /* corrected from form-ext-color */
+}
+
+textarea {
+    padding-top: 16px;
+    resize: none;
+    height: 250px; /* taller for textarea */
+}
+
+::placeholder {
+    color: var(--form-text-color); /* corrected from form-ext-color */
+}
+
+input[type='submit'] {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    margin: auto;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px); /* Adds a slight hover effect */
+}
+
+
+@media (width >= 800px) {
+    textarea, input[type='text'], input[type='email'], input[type='password']{
+        width: 600px;  
+        font-size: 20px;      
+    }
+    form{
+        gap: 40px;
+    }
+  }
+
+  @media (width >= 1400px) {
+    .textarea,input:not([type='submit']){
+        width: 800px;  
+        font-size: 20px;      
+    }
+  }
